@@ -1,6 +1,7 @@
 const Joi = require('joi')
 
 
+
 const userValidation = (fields)=>{
     const userSchema = Joi.object({
         email : Joi.string().min(8).max(32).required(),
